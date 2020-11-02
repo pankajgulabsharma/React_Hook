@@ -1,0 +1,16 @@
+a{
+    color:#61dafb;
+}
+a.active_class{
+    color: #a11a8a;
+    border-bottom: 2px solid red;
+    
+}
+.menu-style{
+    width: 100%;
+    line-height:60px;
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}

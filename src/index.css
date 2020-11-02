@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+.divsection{
+  background-color: green;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border:5px solid #f77777;
+}
+.buttonsection{
+  padding: 10px;
+  border:5px solid #ccf777;
+  background-color: cornflowerblue;
+}
+.button{
+  padding: 15px 20px;
+  /* margin: 10px; */
+  background: #9b59b6;
+  color: white;
+  border:2px double #ecf0f1;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.eventdiv{
+  width: 100%;
+  background: #fe44ae;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eventh1{
+  color: white;
+  background: transparent;
+  text-shadow: 0 2px 2px black;
+}
+.searchbar{
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.searchbar_input{
+  margin:30px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
