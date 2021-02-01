@@ -30,6 +30,7 @@ import PageError from "./PageError";
 import UseParams from "./UseParams";
 import Search from "./Search";
 import UseReducerComp from "./UseReducer";
+import UseCallBack from "./UseCallback";
 
 function App() {
   /*
@@ -114,6 +115,9 @@ function App() {
       </Switch>
 
       <UseReducerComp />
+      <br />
+      <br />
+      <UseCallBack />
     </>
   );
 }
