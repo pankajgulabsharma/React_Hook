@@ -1,11 +1,7 @@
 import React from "react";
 
-const Title = () => {
-  return (
-    <>
-      <b>useCallback</b> hook function
-    </>
-  );
+const Title = ({text}) => {
+  return <>{text}</>;
 };
 
 export default Title;
