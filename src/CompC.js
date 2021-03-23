@@ -1,30 +1,31 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { FirstName } from "./ContextAPI";
 
 const CompC = () => {
-    return (
-        <>
-            <FirstName.Consumer>
-                {({ data, clickevent }) => {
-                    return <>
-                    <div className="eventdiv">
-                        <h1>Context API</h1>
-                        <h2>{data}</h2>
-                        <button onClick={clickevent}>Click me</button>
-                    </div>
-                    </>
-                }
-                }
-            </FirstName.Consumer>
-        </>
-    )
-}
+  return (
+    <>
+      <FirstName.Consumer>
+        {({ data, clickevent }) => {
+          return (
+            <>
+              <div className="eventdiv">
+                <h1>Context API</h1>
+                <h2>{data}</h2>
+                <button onClick={clickevent}>Click me</button>
+              </div>
+            </>
+          );
+        }}
+      </FirstName.Consumer>
+    </>
+  );
+};
 
 export default CompC;
 
-
-
 // ---------------------------------------By useContext---------------------------
+
+//Note:-> creating and providing in useContext are same the only thing changes on consumer side
 
 // import React, { useContext } from 'react';
 // import { FirstName } from "./ContextAPI";

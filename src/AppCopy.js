@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import UseState_Fun from "./UseState_Fun";
 import CurrentTime from "./CurrentTime";
@@ -18,6 +18,7 @@ import Bootstrap from "./Bootstrap";
 
 import ContextAPI from "./ContextAPI";
 import UseEffect from "./UseEffect";
+import UseEffect2 from "./UseEffect2";
 import Axios from "./Axios";
 
 import { Route, Switch } from "react-router-dom";
@@ -29,39 +30,56 @@ import NavComp4 from "./NavComp4";
 import PageError from "./PageError";
 import UseParams from "./UseParams";
 import Search from "./Search";
-import BottomNavigation from "./BottomNavigation";
-import ProgressBar from "./ProgressBar";
-import DynamicInput from "./DynamicInput";
+import UseReducerComp from "./UseReducer";
+import UseCallBack from "./UseCallback";
+import UseRef from "./UseRef";
+import UseRef2 from "./UseRef2";
 
-import FolderIcon from "@material-ui/icons/Folder";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+function AppCopy() {
+  /*
+  const [state, setState] = useState(0);
+  const [initialState, setInitialState] = useState(0);
+  const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
 
-function App() {
-  const [state, setState] = useState("");
-  const [arr, setArr] = useState([]);
+  useEffect(() => {
+    document.title = `Title clicked ${state} times`;
+  }, [state]);
 
-  const handleClk = () => {
-    if (state !== "") {
-      setArr((preVal) => {
-        return [...preVal, state];
-      });
-      setState("");
-    }
+  //
+  const tick = () => {
+    setInitialState(initialState + 1);
   };
+  useEffect(() => {
+    setInterval(tick, 1000);
+  }, [initialState]);
 
+  //
+  const logMousePositon = e => {
+    console.log("mouse event");
+    setX(e.clientX);
+    setY(e.clientY);
+  };
+  useEffect(() => {
+    console.log("useEffect called");
+    window.addEventListener("mousemove", logMousePositon); //componentDidMount,componentDidupdate
+    return () => {
+      //componentWillUnmount
+      window.removeEventListener("mousemove", logMousePositon);
+    };
+  }, []);
+
+  */
   return (
     <>
-      <input
-        type="text"
-        placeholder="add item"
-        onChange={(e) => setState(e.target.value)}
-        value={state}
-      />
-      <button onClick={handleClk}>Click to add into list</button>
-      <br />
-      <h1>{arr}</h1>
+      {/* {initialState}
+         <br />
+         <button onClick={() => setState(preVal => preVal + 1)}>
+         Click me {state}
+         </button>
+         <br />
+         X-{x} Y-{y} */}
+
       <UseState_Fun />
       <CurrentTime />
       <CurrentTime2 />
@@ -78,6 +96,7 @@ function App() {
       <Bootstrap />
       <ContextAPI />
       <UseEffect />
+      <UseEffect2 />
       <Axios />
 
       <Navbar />
@@ -98,18 +117,21 @@ function App() {
         <Route path="/search" component={Search} />
         <Route component={PageError}></Route>
       </Switch>
-      {/* <ProgressBar /> */}
-      <BottomNavigation
-        items={[
-          { label: "Recents", icon: <FolderIcon /> },
-          { label: "Favorites", icon: <RestoreIcon /> },
-          { label: "Nearby", icon: <FavoriteIcon /> },
-          { label: "Folder", icon: <LocationOnIcon /> },
-        ]}
-      />
-      <DynamicInput />
+
+      <UseReducerComp />
+      <br />
+      <br />
+      <UseCallBack />
+      <br />
+      <br />
+      <UseRef />
+      <br />
+      <br />
+      <UseRef2 />
+      <br />
+      <br />
     </>
   );
-};
+}
 
-export default App;
+export default AppCopy;
