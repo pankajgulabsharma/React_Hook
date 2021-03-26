@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState,useRef,useEffect } from 'react'
 
 const Form4 = () => {
+    // const inputRef=useRef();
+    // useEffect(()=>inputRef.current.focus(),[])
+
     const [fullname, setFullName] = useState({
         fname: "",
         mname: "",
         lname: ""
     });
+
 
     const EnterFun = (e) => {
         console.log(e.target.value);
