@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from './App';
+import App from "./App";
+import Voice from "./Voice";
 import AppCopy from "./AppCopy";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
@@ -9,7 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AppCopy />
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
