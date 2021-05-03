@@ -32,6 +32,7 @@ import Search from "./Search";
 import BottomNavigation from "./BottomNavigation";
 import ProgressBar from "./ProgressBar";
 import DynamicInput from "./DynamicInput";
+import RfcParrent from "./RfcParrent";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -108,6 +109,7 @@ function App() {
         ]}
       />
       <DynamicInput />
+      <RfcParrent />
     </>
   );
 }
