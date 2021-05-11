@@ -33,6 +33,8 @@ import BottomNavigation from "./BottomNavigation";
 import ProgressBar from "./ProgressBar";
 import DynamicInput from "./DynamicInput";
 import RfcParrent from "./RfcParrent";
+import CustomHook from "./CustomHook";
+import Api_call_with_useEffect from "./Api_call_with_useEffect";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -110,6 +112,9 @@ function App() {
       />
       <DynamicInput />
       <RfcParrent />
+      <CustomHook />
+      <Api_call_with_useEffect />
+      {/* <UseState_Fun /> */}
     </>
   );
 }
