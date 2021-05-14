@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 
-function Ref(props, ref) {
+function UseRef3(props, ref) {
   return (
     <div>
       <input type="text" ref={ref} />
@@ -8,4 +8,4 @@ function Ref(props, ref) {
   );
 }
 
-export default forwardRef(Ref);
+export default forwardRef(UseRef3);

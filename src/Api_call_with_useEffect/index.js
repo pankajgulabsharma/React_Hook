@@ -7,7 +7,7 @@ const Api_call_with_useEffect = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    getItem("https://restcountries.eu/rest/v2/all")
+    getItem("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         setCountries(res);
         setLoad(true);

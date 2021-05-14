@@ -32,9 +32,14 @@ import Search from "./Search";
 import BottomNavigation from "./BottomNavigation";
 import ProgressBar from "./ProgressBar";
 import DynamicInput from "./DynamicInput";
-import RfcParrent from "./RfcParrent";
+import UseRefParrent from "./UseRefParrent";
 import CustomHook from "./CustomHook";
 import Api_call_with_useEffect from "./Api_call_with_useEffect";
+import UseEffect2 from "./UseEffect2";
+import EventListner from "./EventListner";
+import ApiCall from "./ApiCall";
+import UseRef4 from "./UseRef4";
+import UseReducer from "./UseReducer";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -53,7 +58,6 @@ function App() {
       setState("");
     }
   };
-
   return (
     <>
       <input
@@ -111,10 +115,15 @@ function App() {
         ]}
       />
       <DynamicInput />
-      <RfcParrent />
+      <UseRefParrent />
       <CustomHook />
       <Api_call_with_useEffect />
       {/* <UseState_Fun /> */}
+      <UseEffect2 />
+      <EventListner />
+      <ApiCall />
+      <UseRef4 />
+      <UseReducer />
     </>
   );
 }

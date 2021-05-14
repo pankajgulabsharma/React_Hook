@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import Ref from "./Ref";
+import UseRef3 from "./UseRef3";
 
-export default function RfcParrent() {
+export default function UseRefParrent() {
   let inputRef = useRef(null);
 
   function handleClick() {
@@ -9,7 +9,7 @@ export default function RfcParrent() {
   }
   return (
     <div>
-      <Ref ref={inputRef} />
+      <UseRef3 ref={inputRef} />
       <button onClick={handleClick}>On click</button>
     </div>
   );
