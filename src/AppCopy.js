@@ -16,7 +16,7 @@ import Increment_Decrement from "./Increment_Decrement";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Bootstrap from "./Bootstrap";
 
-import ContextAPI from "./ContextAPI";
+import ContextAPI from "./ContextAPI_and_useContext/ContextAPI.js";
 import UseEffect from "./UseEffect";
 import UseEffect2 from "./UseEffect2";
 import Axios from "./Axios";

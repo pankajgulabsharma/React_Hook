@@ -16,7 +16,7 @@ import Increment_Decrement from "./Increment_Decrement";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Bootstrap from "./Bootstrap";
 
-import ContextAPI from "./ContextAPI";
+import ContextAPI from "./ContextAPI_and_useContext/ContextAPI.js";
 import UseEffect from "./UseEffect";
 import Axios from "./Axios";
 
@@ -33,7 +33,7 @@ import BottomNavigation from "./BottomNavigation";
 import ProgressBar from "./ProgressBar";
 import DynamicInput from "./DynamicInput";
 import UseRefParrent from "./UseRefParrent";
-import CustomHook from "./CustomHook";
+import CustomHook from "./CustomHook/CustomHook";
 import Api_call_with_useEffect from "./Api_call_with_useEffect";
 import UseEffect2 from "./UseEffect2";
 import EventListner from "./EventListner";
@@ -95,7 +95,7 @@ function App() {
         <Route exact path="/" component={() => <NavComp1 myname="pankaj" />} />
         <Route
           path="/navcomp2"
-          render={() => <NavComp2 my school_name="sent Raghuvir" />}
+          render={() => <NavComp2 my_school_name="sent Raghuvir" />}
         />
         <Route exact path="/navcomp3" component={NavComp3} />{" "}
         {/* we r putting exact here bcz this line and it's below line having same initialization i.e /navcomp3 and u know Route see it's initial value and on the basis of that is shows component */}
