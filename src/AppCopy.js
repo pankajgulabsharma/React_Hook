@@ -12,6 +12,7 @@ import Form4 from "./Form4";
 import ToDoList from "./ToDoList";
 import ToDoList2 from "./ToDoList2";
 import Increment_Decrement from "./Increment_Decrement";
+import AllOperation from "./AllOperation.js";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Bootstrap from "./Bootstrap";
@@ -130,6 +131,7 @@ function AppCopy() {
       <UseRef2 />
       <br />
       <br />
+      <AllOperation />
     </>
   );
 }

@@ -40,6 +40,7 @@ import EventListner from "./EventListner";
 import ApiCall from "./ApiCall";
 import UseRef4 from "./UseRef4";
 import UseReducer from "./UseReducer";
+import AllOperation from "./AllOperation";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -124,6 +125,7 @@ function App() {
       <ApiCall />
       <UseRef4 />
       <UseReducer />
+      <AllOperation />
     </>
   );
 }
