@@ -35,6 +35,8 @@ import DynamicInput from "./DynamicInput";
 import RfcParrent from "./RfcParrent";
 import CustomHook from "./CustomHook";
 import Api_call_with_useEffect from "./Api_call_with_useEffect";
+import ClickToDelete from "./ClickToDelete";
+import ToDo_all_operation from "./All_ToDo_Operation/ToDo_all_operation";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -115,6 +117,8 @@ function App() {
       <CustomHook />
       <Api_call_with_useEffect />
       {/* <UseState_Fun /> */}
+      <ClickToDelete />
+      <ToDo_all_operation />
     </>
   );
 }
