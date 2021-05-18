@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ToDo_all_operation_Css.css";
 import AddIcon from "@material-ui/icons/Add";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 
+//get data from local storage
+const getData = () => {
+  const list = localStorage.getItem("list");
+  if (list) {
+    return JSON.parse(list);
+  }
+};
+
 function ToDo_all_operation() {
   const [state, setState] = useState("");
-  const [arr, setArr] = useState([]);
+  const [arr, setArr] = useState(getData());
   const [editButton, setEditButton] = useState(null);
 
   const handleChage = (e) => {
@@ -51,6 +59,10 @@ function ToDo_all_operation() {
     }
   };
 
+  //set into local storage
+  useEffect(() => {
+    localStorage.setItem("list", JSON.stringify(arr));
+  }, [arr]);
   return (
     <div>
       <h1 style={{ textAlign: "center", color: "red" }}>
