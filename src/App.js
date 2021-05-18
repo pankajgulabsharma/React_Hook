@@ -16,7 +16,7 @@ import Increment_Decrement from "./Increment_Decrement";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Bootstrap from "./Bootstrap";
 
-import ContextAPI from "./ContextAPI";
+import ContextAPI from "./ContextAPI_and_useContext/ContextAPI.js";
 import UseEffect from "./UseEffect";
 import Axios from "./Axios";
 
@@ -32,11 +32,16 @@ import Search from "./Search";
 import BottomNavigation from "./BottomNavigation";
 import ProgressBar from "./ProgressBar";
 import DynamicInput from "./DynamicInput";
-import RfcParrent from "./RfcParrent";
-import CustomHook from "./CustomHook";
+import UseRefParrent from "./UseRefParrent";
+import CustomHook from "./CustomHook/CustomHook";
 import Api_call_with_useEffect from "./Api_call_with_useEffect";
 import ClickToDelete from "./ClickToDelete";
 import ToDo_all_operation from "./All_ToDo_Operation/ToDo_all_operation";
+import UseEffect2 from "./UseEffect2";
+import EventListner from "./EventListner";
+import ApiCall from "./ApiCall";
+import UseRef4 from "./UseRef4";
+import UseReducer from "./UseReducer";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -55,7 +60,6 @@ function App() {
       setState("");
     }
   };
-
   return (
     <>
       <input
@@ -93,7 +97,7 @@ function App() {
         <Route exact path="/" component={() => <NavComp1 myname="pankaj" />} />
         <Route
           path="/navcomp2"
-          render={() => <NavComp2 my school_name="sent Raghuvir" />}
+          render={() => <NavComp2 my_school_name="sent Raghuvir" />}
         />
         <Route exact path="/navcomp3" component={NavComp3} />{" "}
         {/* we r putting exact here bcz this line and it's below line having same initialization i.e /navcomp3 and u know Route see it's initial value and on the basis of that is shows component */}
@@ -113,12 +117,17 @@ function App() {
         ]}
       />
       <DynamicInput />
-      <RfcParrent />
+      <UseRefParrent />
       <CustomHook />
       <Api_call_with_useEffect />
       {/* <UseState_Fun /> */}
       <ClickToDelete />
       <ToDo_all_operation />
+      <UseEffect2 />
+      <EventListner />
+      <ApiCall />
+      <UseRef4 />
+      <UseReducer />
     </>
   );
 }

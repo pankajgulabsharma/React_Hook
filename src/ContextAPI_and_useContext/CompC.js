@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FirstName } from "./ContextAPI";
+import { FirstName } from "./ContextAPI.js";
 
 const CompC = () => {
   return (

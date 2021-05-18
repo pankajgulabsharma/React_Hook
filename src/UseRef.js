@@ -1,5 +1,10 @@
 import React, { useEffect, useRef } from "react";
 
+//Note:->
+//  (1)useRef not re-render when component is render again
+//  (2)It is comes under Un-Controlled form bcz (no need of any unwanted attribute like (controlled form attribute like onClick,name,value))
+//  it is like traditional way if you remember we r using document.getElementByid and all so now we can deal that in react by using useRef
+
 const UseRef = () => {
   const inputRef = useRef(null); //creating useRef variable
 
@@ -11,7 +16,7 @@ const UseRef = () => {
   return (
     <>
       <input type="text" ref={inputRef} />
-    </> 
+    </>
   );
 };
 
