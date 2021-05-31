@@ -122,12 +122,12 @@ function App() {
       <Api_call_with_useEffect />
       {/* <UseState_Fun /> */}
       <ClickToDelete />
-      <ToDo_all_operation />
       <UseEffect2 />
       <EventListner />
       <ApiCall />
       <UseRef4 />
       <UseReducer />
+      <ToDo_all_operation />
     </>
   );
 }
