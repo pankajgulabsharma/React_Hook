@@ -32,7 +32,7 @@ import PageError from "./PageError";
 import UseParams from "./UseParams";
 import Search from "./Search";
 import UseReducerComp from "./UseReducer";
-import UseCallBack from "./UseCallback";
+import UseCallBack from "./Callback";
 import UseRef from "./UseRef";
 import UseRef2 from "./UseRef2";
 
