@@ -35,12 +35,17 @@ import DynamicInput from "./DynamicInput";
 import UseRefParrent from "./UseRefParrent";
 import CustomHook from "./CustomHook/CustomHook";
 import Api_call_with_useEffect from "./Api_call_with_useEffect";
+import ClickToDelete from "./ClickToDelete";
+import ToDo_all_operation from "./All_ToDo_Operation/ToDo_all_operation";
 import UseEffect2 from "./UseEffect2";
 import EventListner from "./EventListner";
 import ApiCall from "./ApiCall";
 import UseRef4 from "./UseRef4";
 import UseReducer from "./UseReducer";
 import AllOperation from "./AllOperation";
+import Memo from "./Memo/index.js";
+import UseMemo from "./useMemo/index.js";
+import Task from "./task-passing-method";
 
 import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
@@ -120,12 +125,19 @@ function App() {
       <CustomHook />
       <Api_call_with_useEffect />
       {/* <UseState_Fun /> */}
+      <ClickToDelete />
       <UseEffect2 />
       <EventListner />
       <ApiCall />
       <UseRef4 />
       <UseReducer />
       <AllOperation />
+      <ToDo_all_operation />
+      <Memo />
+      <br />
+      <br />
+      <UseMemo />
+      <Task />
     </>
   );
 }

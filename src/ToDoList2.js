@@ -15,7 +15,7 @@ const getData = () => {
 
 const ToDoList = () => {
   const [currntVal, setcurrntVal] = useState("");
-  const [arr, setArr] = useState(getData());
+  const [arr, setArr] = useState([]);
 
   const changeEvent = (e) => {
     setcurrntVal(e.target.value);
